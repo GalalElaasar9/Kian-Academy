@@ -166,5 +166,13 @@
 .bg-gradient-hero { background: var(--gradient-hero); }
 .bg-gradient-primary { background: var(--gradient-primary); }
 .bg-gradient-card { background: var(--gradient-card); }
+.bg-gradient-mesh { background-image: var(--gradient-mesh); }
 .shadow-glow { box-shadow: var(--shadow-glow); }
 .shadow-elegant { box-shadow: var(--shadow-elegant); }
+.shadow-soft { box-shadow: var(--shadow-soft); }
+.text-gradient { background: var(--gradient-primary); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.grid-pattern {
+  background-image: linear-gradient(oklch(0.4 0.1 290 / 8%) 1px, transparent 1px),
+                    linear-gradient(90deg, oklch(0.4 0.1 290 / 8%) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
