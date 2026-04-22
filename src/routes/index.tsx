@@ -204,8 +204,8 @@ function Index() {
       </Section>
 
       {/* Pricing + Countdown */}
-      <Section id="pricing">
-        <div id="pricing" className="max-w-3xl mx-auto">
+      <Section>
+        <div id="pricing" className="max-w-3xl mx-auto scroll-mt-20">
           <h2 className="text-4xl md:text-5xl font-black text-center mb-4">
             <span className="bg-gradient-primary bg-clip-text text-transparent">العرض ينتهي خلال</span>
           </h2>
