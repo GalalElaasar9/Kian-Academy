@@ -218,7 +218,41 @@ function Index() {
         </div>
       </Section>
 
-      {/* GUARANTEE */}
+      {/* WHY KIAN */}
+      <Section className="bg-card/20" id="why-kian">
+        <div className="max-w-5xl mx-auto">
+          <SectionHeader tag="من نحن" title="ليه كيان؟" subtitle="أكاديمية كيان — وجهتك الأولى لتعلم البرمجة باحترافية" />
+          <div className="grid md:grid-cols-2 gap-6 mb-12">
+            {[
+              { icon: "🎯", title: "منهج عملي 100%", desc: "محتوى مبني على مشاريع حقيقية من سوق العمل، مش مجرد نظريات." },
+              { icon: "👨‍🏫", title: "مدربون محترفون", desc: "فريق من المبرمجين أصحاب الخبرة في كبرى الشركات التقنية." },
+              { icon: "🤝", title: "متابعة شخصية", desc: "كل طالب عندنا له اهتمام خاص ومتابعة مستمرة حتى الاحتراف." },
+              { icon: "🚀", title: "تأهيل لسوق العمل", desc: "نساعدك في بناء portfolio قوي والاستعداد لمقابلات الشركات." },
+            ].map((item, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1 }}
+                className="bg-gradient-card backdrop-blur-sm border border-border rounded-2xl p-7 shadow-soft hover:border-primary/40 transition-all"
+              >
+                <div className="text-4xl mb-4">{item.icon}</div>
+                <h3 className="text-xl font-bold mb-2 text-foreground">{item.title}</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">{item.desc}</p>
+              </motion.div>
+            ))}
+          </div>
+          <div className="text-center bg-gradient-card backdrop-blur-sm border border-primary/20 rounded-2xl p-8 mb-10">
+            <p className="text-lg md:text-xl text-foreground/90 leading-relaxed">
+              في <span className="text-gradient font-bold">أكاديمية كيان</span>، إحنا مش بنعلم برمجة بس — إحنا بنبني جيل جديد من المبرمجين القادرين على المنافسة محلياً وعالمياً.
+              رسالتنا إن كل طالب يخرج من عندنا وعنده القدرة الحقيقية على تنفيذ مشاريع احترافية والدخول لسوق العمل بثقة.
+            </p>
+          </div>
+          <div className="text-center"><SubscribeButton /></div>
+        </div>
+      </Section>
+
       <Section className="bg-card/20">
         <div className="max-w-3xl mx-auto text-center">
           <motion.div
@@ -266,10 +300,10 @@ function Index() {
               </span>
               <h3 className="text-2xl font-bold mb-8 text-foreground">الباقة الكاملة</h3>
 
-              <div className="flex items-baseline justify-center gap-3 mb-2">
-                <span className="text-xl text-muted-foreground line-through">2000</span>
-                <span className="text-7xl md:text-8xl font-black text-gradient">999</span>
-                <span className="text-2xl font-bold text-foreground">جنيه</span>
+              <div className="flex items-baseline justify-center gap-4 mb-2 flex-wrap">
+                <span className="text-6xl md:text-7xl font-black text-foreground line-through decoration-red-500 decoration-4">2000</span>
+                <span className="text-4xl md:text-5xl font-black text-red-500">999</span>
+                <span className="text-xl font-bold text-red-500">جنيه</span>
               </div>
               <p className="text-muted-foreground mb-10 text-sm">دفعة واحدة — وصول مدى الحياة</p>
 
