@@ -266,10 +266,10 @@ function Index() {
               </span>
               <h3 className="text-2xl font-bold mb-8 text-foreground">الباقة الكاملة</h3>
 
-              <div className="flex items-baseline justify-center gap-3 mb-2">
-                <span className="text-xl text-muted-foreground line-through">2000</span>
-                <span className="text-7xl md:text-8xl font-black text-gradient">999</span>
-                <span className="text-2xl font-bold text-foreground">جنيه</span>
+              <div className="flex items-baseline justify-center gap-4 mb-2 flex-wrap">
+                <span className="text-6xl md:text-7xl font-black text-foreground line-through decoration-red-500 decoration-4">2000</span>
+                <span className="text-4xl md:text-5xl font-black text-red-500">999</span>
+                <span className="text-xl font-bold text-red-500">جنيه</span>
               </div>
               <p className="text-muted-foreground mb-10 text-sm">دفعة واحدة — وصول مدى الحياة</p>
 
