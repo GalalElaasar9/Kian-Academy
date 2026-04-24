@@ -27,9 +27,9 @@ export function CountdownTimer() {
 
   return (
     <div className="flex justify-center gap-4 md:gap-6">
-      <Box value={time.hours} label="ساعة" />
-      <Box value={time.minutes} label="دقيقة" />
       <Box value={time.seconds} label="ثانية" />
+      <Box value={time.minutes} label="دقيقة" />
+      <Box value={time.hours} label="ساعة" />
     </div>
   );
 }
