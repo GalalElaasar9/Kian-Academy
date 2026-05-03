@@ -1,4 +1,3 @@
-import { createFileRoute } from "@tanstack/react-router";
 import { motion } from "framer-motion";
 import project1 from "@/assets/project-1.jpg";
 import project2 from "@/assets/project-2.jpg";
@@ -6,18 +5,6 @@ import project3 from "@/assets/project-3.jpg";
 import { SubscribeButton } from "@/components/SubscribeButton";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { CountdownTimer } from "@/components/CountdownTimer";
-
-export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "كورس البرمجة الاحترافي — تعلم وابدأ مشوارك" },
-      { name: "description", content: "كورس شامل لتعلم البرمجة من الصفر للاحتراف مع مشاريع حقيقية وضمان استرداد كامل." },
-      { property: "og:title", content: "كورس البرمجة الاحترافي" },
-      { property: "og:description", content: "تعلم البرمجة من الصفر للاحتراف مع مشاريع حقيقية." },
-    ],
-  }),
-  component: Index,
-});
 
 const courseTopics = [
   { num: "01", title: "أساسيات البرمجة", desc: "ابدأ من الصفر مع HTML, CSS, JavaScript وفهم المنطق البرمجي" },
@@ -74,7 +61,7 @@ function Section({ children, className = "", id }: { children: React.ReactNode; 
   );
 }
 
-function Index() {
+export default function Index() {
   return (
     <main className="min-h-screen bg-background overflow-x-hidden">
       <WhatsAppButton />
