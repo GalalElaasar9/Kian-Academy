@@ -208,7 +208,7 @@ export default function Index() {
       {/* WHY KIAN */}
       <Section className="bg-card/20" id="why-kian">
         <div className="max-w-5xl mx-auto">
-          <SectionHeader tag="من نحن" title="ليه كيان؟" subtitle="أكاديمية كيان — وجهتك الأولى لتعلم البرمجة باحترافية" />
+          <SectionHeader tag="من نحن" title="" subtitle="أكاديمية كيان — وجهتك الأولى لتعلم البرمجة باحترافية" />
           <div className="grid md:grid-cols-2 gap-6 mb-12">
             {[
               { icon: "🎯", title: "منهج عملي 100%", desc: "تدريب عملى على مشاريع حقيقية خلال فترة الكورس بالإضافة إلى تدريب عملى لمدة شهرين فى شركات البرمجة" },
